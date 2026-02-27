@@ -7,12 +7,14 @@ import { Routes,Route } from 'react-router-dom'
 import PremiumServicesPage from './Components/Services'
 import PremiumContactPage from './Components/Contacts'
 import BlogPage from './Components/Blogs'
+import ScrollToTop from './Components/ScrollToTop'
 function App() {
   
 
   return (
     <>
 <Navbar className="sticky top-0 z-50"/>
+<ScrollToTop/>
      <Routes>
 <Route path="/" element={<LandingPage />} />
           <Route path="/about" element={<AboutUsPage />} />
