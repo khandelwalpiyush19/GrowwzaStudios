@@ -9,7 +9,7 @@ import {
 import { Link } from 'react-router-dom';
 
 const PremiumServicesPage = () => {
-  // Custom color palette
+  // Custom color palette (keep your existing colors)
   const colors = {
     beige: {
       50: '#faf7f2',
@@ -38,7 +38,7 @@ const PremiumServicesPage = () => {
     }
   };
 
-  // Animation variants
+  // Animation variants (keep your existing variants)
   const fadeInUp = {
     initial: { opacity: 0, y: 40 },
     animate: { opacity: 1, y: 0 },
@@ -71,7 +71,7 @@ const PremiumServicesPage = () => {
     transition: { duration: 0.5, ease: "easeOut" }
   };
 
-  // Services data with enhanced descriptions
+  // Services data (keep your existing services array)
   const services = [
     {
       icon: <Code size={32} />,
@@ -80,9 +80,9 @@ const PremiumServicesPage = () => {
       features: ["Responsive Design", "Latest Technologies", "Brand Focus", "SEO Optimized", "Fast Loading"],
       stats: { projects: "250+", satisfaction: "98%" },
       gradient: "linear-gradient(135deg, #c9b28b, #b9a282)",
-      detailedDesc: "Every line of code is written with precision, ensuring your website is secure, scalable, and ready for millions of visitors. We implement modern architectures that grow with your business.",
+      detailedDesc: "Every line of code is written with precision, ensuring your website is secure, scalable, and ready for millions of visitors. We implement modern architectures that grow with your business.We build artfully designed, lightning-fast websites that are optimized for search engines and built to convert visitors into customers.",
       achievements: [
-        { icon: <Zap size={16} />, text: "Lightning fast load times under 2 seconds" },
+        { icon: <Zap size={10} />, text: "Lightning fast load times under 2 seconds" },
         { icon: <Shield size={16} />, text: "Enterprise-grade security protocols" },
         { icon: <TrendingUp size={16} />, text: "Scalable to handle 1M+ monthly visitors" }
       ]
@@ -104,7 +104,7 @@ const PremiumServicesPage = () => {
     {
       icon: <Globe size={32} />,
       title: "Web Application Development",
-      description: "Powerful, scalable web applications that solve complex business challenges. Our apps handle millions of transactions daily with 99.9% uptime, serving users across the globe with seamless performance.",
+      description: "Powerful, scalable web applications that solve complex business challenges. Our apps handle millions of transactions daily with 99.9% uptime, serving users across the globe with seamless performance.Seamless performance and real-time capabilities that drive business growth.",
       features: ["Scalable", "User-focused", "Latest Tech Stack", "Real-time", "Cloud Native"],
       stats: { projects: "120+", uptime: "99.9%" },
       gradient: "linear-gradient(135deg, #a18d71, #8b7557)",
@@ -118,21 +118,20 @@ const PremiumServicesPage = () => {
     {
       icon: <Smartphone size={32} />,
       title: "Mobile App Development",
-      description: "Native and cross-platform mobile apps that deliver exceptional user experiences. Our apps have been downloaded over 5 million times and maintain 4.8+ star ratings across app stores.",
+      description: "Native and cross-platform mobile apps that deliver exceptional user experiences. Our apps have been downloaded over 5 million times and maintain 4.8+ star ratings across app stores.We blend cutting-edge technology with user-centric design to create mobile apps that not only look great but also perform flawlessly.",
       features: ["Android & iOS", "User-centric", "Modern UI/UX", "Offline Support", "Push Notifications"],
       stats: { downloads: "5M+", rating: "4.8★" },
       gradient: "linear-gradient(135deg, #dcc5a8, #c9b28b)",
       detailedDesc: "From startups to Fortune 500 companies, we create mobile experiences that users love. Our apps are optimized for performance, battery life, and seamless integration with device features.",
       achievements: [
         { icon: <Star size={16} />, text: "4.8+ average app store rating" },
-        // { icon: <Download size={16} />, text: "5 million+ total downloads" },
         { icon: <Award size={16} />, text: "Featured in App Store 20+ times" }
       ]
     },
     {
       icon: <Palette size={32} />,
       title: "Graphics Designing",
-      description: "Eye-catching, modern designs that tell your brand's story. Our portfolio includes work for global brands, with designs that have won international awards and recognition.",
+      description: "Eye-catching, modern designs that tell your brand's story. Our portfolio includes work for global brands, with designs that have won international awards and recognition.Clear, compelling visuals that elevate your brand and captivate your audience. We create designs that not only look stunning but also communicate your message effectively.",
       features: ["Brand Identity", "Marketing Materials", "Creative Direction", "Print Design", "Digital Art"],
       stats: { projects: "500+", awards: "15+" },
       gradient: "linear-gradient(135deg, #c9b28b, #dcc5a8)",
@@ -146,7 +145,7 @@ const PremiumServicesPage = () => {
     {
       icon: <Users size={32} />,
       title: "Social Media Management",
-      description: "Strategic social media management that builds communities and drives engagement. We've grown audiences to millions of followers and generated over 100M+ impressions.",
+      description: "Strategic social media management that builds communities and drives engagement. We've grown audiences to millions of followers and generated over 100M+ impressions.Brands don't just need followers; they need engaged communities.",
       features: ["Content Strategy", "Community Management", "Analytics", "Campaign Management", "Influencer Outreach"],
       stats: { followers: "2M+", engagement: "+200%" },
       gradient: "linear-gradient(135deg, #b9a282, #c9b28b)",
@@ -160,13 +159,13 @@ const PremiumServicesPage = () => {
     {
       icon: <Search size={32} />,
       title: "SEO & Digital Marketing",
-      description: "Data-driven SEO strategies that put you on page one. We've helped clients achieve #1 rankings for competitive keywords, driving 300% more organic traffic.",
+      description: "Data-driven SEO strategies that put you on page one. We've helped clients achieve #1 rankings for competitive keywords, driving 300% more organic traffic. Our holistic SEO and digital marketing strategies are designed to drive sustainable growth, increase visibility, and deliver real business results.",
       features: ["Keyword Strategy", "On-page SEO", "Analytics", "Link Building", "Local SEO"],
       stats: { keywords: "500+", traffic: "+300%" },
       gradient: "linear-gradient(135deg, #a18d71, #b9a282)",
       detailedDesc: "Our holistic approach combines technical SEO, content strategy, and authority building to create sustainable growth. We focus on real results that impact your bottom line.",
       achievements: [
-        { icon: <Target size={16} />, text: "#1 rankings for 500+ competitive keywords" },
+        { icon: <Target size={10} />, text: "#1 ranking for 500+ competitive keywords" },
         { icon: <BarChart size={16} />, text: "300% average organic traffic increase" },
         { icon: <Zap size={16} />, text: "Pages load 2x faster after optimization" }
       ]
@@ -174,7 +173,7 @@ const PremiumServicesPage = () => {
     {
       icon: <Megaphone size={32} />,
       title: "Branding & Logos",
-      description: "Complete brand identities that resonate and endure. We've created brands for 20+ companies that have become household names, with identities that stand the test of time.",
+      description: "Complete brand identities that resonate and endure. We've created brands for 20+ companies that have become household names, with identities that stand the test of time.We nurture brands from ground to their full potential.",
       features: ["Logo Design", "Brand Guidelines", "Visual Identity", "Brand Strategy", "Voice & Tone"],
       stats: { brands: "20+", recognition: "90%" },
       gradient: "linear-gradient(135deg, #8b7557, #a18d71)",
@@ -231,504 +230,583 @@ const PremiumServicesPage = () => {
     }
   ];
 
+  // Add responsive styles using a style tag
+  const responsiveStyles = `
+    @media (max-width: 768px) {
+      .services-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+        padding: 0 10px !important;
+      }
+      
+      .service-card {
+        padding: 20px !important;
+        margin: 0 !important;
+        width: 100% !important;
+      }
+      
+      .service-header {
+        flex-direction: column !important;
+        text-align: center !important;
+        align-items: center !important;
+      }
+      
+      .service-icon {
+        margin-bottom: 10px !important;
+      }
+      
+      .features-container {
+        justify-content: center !important;
+      }
+      
+      .process-grid {
+        grid-template-columns: 1fr !important;
+        gap: 15px !important;
+        padding: 0 10px !important;
+      }
+      
+      .section-title {
+        font-size: 2rem !important;
+        padding: 0 15px !important;
+      }
+      
+      .section-description {
+        padding: 0 15px !important;
+        font-size: 1rem !important;
+      }
+      
+      .cta-section {
+        padding: 60px 15px !important;
+      }
+      
+      .cta-button {
+        width: 100% !important;
+        justify-content: center !important;
+        padding: 15px 30px !important;
+      }
+      
+      .footer-note {
+        padding: 20px 15px !important;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .service-card {
+        padding: 15px !important;
+      }
+      
+      .service-title {
+        font-size: 1.2rem !important;
+      }
+      
+      .feature-tag {
+        font-size: 0.7rem !important;
+        padding: 3px 8px !important;
+      }
+      
+      .achievement-item {
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: 5px !important;
+      }
+    }
+  `;
+
+  // Function to get navbar height (adjust this value based on your actual navbar height)
+  const getNavbarHeight = () => {
+    // You can adjust these values based on your actual navbar height
+    const desktopHeight = '80px';
+    const mobileHeight = '60px';
+    
+    return `
+      :root {
+        --navbar-height-desktop: ${desktopHeight};
+        --navbar-height-mobile: ${mobileHeight};
+      }
+      
+      .content-with-navbar {
+        padding-top: var(--navbar-height-desktop);
+      }
+      
+      @media (max-width: 768px) {
+        .content-with-navbar {
+          padding-top: var(--navbar-height-mobile);
+        }
+      }
+    `;
+  };
+
   return (
     <main style={{
       backgroundColor: colors.beige[50],
       fontFamily: 'Inter, system-ui, -apple-system, sans-serif',
       overflow: 'hidden',
+      width: '100%',
+      maxWidth: '100vw',
+      margin: 0,
+      padding: 0,
+      minHeight: '100vh',
     }}>
-      {/* Add Inter font */}
+      {/* Add Inter font and responsive styles */}
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+      <style>{responsiveStyles}</style>
+      <style>{getNavbarHeight()}</style>
 
-      {/* Hero Section */}
-      {/* <section style={{
-        padding: '100px 20px 60px',
-        background: `linear-gradient(135deg, ${colors.beige[100]} 0%, ${colors.beige[50]} 100%)`,
-        position: 'relative',
-        overflow: 'hidden',
-      }}> */}
-        {/* Decorative elements */}
-        {/* <motion.div
-          style={{
-            position: 'absolute',
-            top: '10%',
-            right: '5%',
-            width: '400px',
-            height: '400px',
-            background: `radial-gradient(circle, ${colors.gold[200]}40, transparent 70%)`,
-            borderRadius: '50%',
-            filter: 'blur(80px)',
-            zIndex: 0,
-          }}
-          animate={{
-            scale: [1, 1.2, 1],
-            opacity: [0.3, 0.5, 0.3],
-          }}
-          transition={{
-            duration: 8,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-        /> */}
+      {/* Spacer div to account for fixed navbar */}
+      <div className="content-with-navbar" style={{
+        width: '100%',
+      }}>
+        {/* Your existing content starts here */}
+        
+        {/* Services Grid */}
+        <section style={{ 
+          padding: '40px 20px 40px', // Reduced top padding since we have the navbar spacer
+          background: `linear-gradient(135deg, ${colors.beige[100]} 0%, ${colors.beige[50]} 100%)`,
+          position: 'relative',
+          overflow: 'hidden',
+          width: '100%',
+          boxSizing: 'border-box',
+        }}>
+          <div style={{ 
+            maxWidth: '1200px', 
+            margin: '0 auto',
+            width: '100%',
+            padding: '0 10px',
+            boxSizing: 'border-box',
+          }}>
+            {/* Your existing content continues... */}
+            <motion.div
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}
+              variants={staggerContainer}
+              style={{ textAlign: 'center', marginBottom: '40px' }}
+            >
+              {/* <motion.div variants={fadeInUp} style={{ marginBottom: '20px' }}>
+                <span style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '8px',
+                  background: colors.gold[100],
+                  color: colors.gold[700],
+                  padding: '8px 20px',
+                  borderRadius: '40px',
+                  fontSize: 'clamp(0.8rem, 3vw, 0.9rem)',
+                  fontWeight: '500',
+                }}>
+                  <Sparkles size={16} />
+                  GrowWZa STUDIOS
+                </span>
+              </motion.div> */}
 
-        {/* <div style={{ maxWidth: '1200px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
-          <motion.div
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            variants={staggerContainer}
-            style={{ textAlign: 'center' }}
-          > */}
-            {/* <motion.div variants={fadeInUp} style={{ marginBottom: '20px' }}>
-              <span style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '8px',
-                background: colors.gold[100],
-                color: colors.gold[700],
-                padding: '8px 20px',
-                borderRadius: '40px',
-                fontSize: '0.9rem',
-                fontWeight: '500',
-              }}>
-                <Sparkles size={16} />
-                Premium Digital Solutions
-              </span>
-            </motion.div> */}
+              <motion.h2 
+                variants={fadeInUp} 
+                className="section-title"
+                style={{
+                  fontSize: 'clamp(2rem, 6vw, 3.5rem)',
+                  fontWeight: '300',
+                  color: colors.stone[800],
+                  marginBottom: '16px',
+                  lineHeight: '1.2',
+                  wordBreak: 'break-word',
+                }}
+              >
+                Our <span style={{ fontWeight: '500', color: colors.gold[600] }}>Services</span>
+              </motion.h2>
+              <motion.p 
+                variants={fadeInUp} 
+                className="section-description"
+                style={{
+                  fontSize: 'clamp(1rem, 3vw, 1.2rem)',
+                  color: colors.stone[600],
+                  maxWidth: '700px',
+                  margin: '0 auto',
+                  padding: '0 10px',
+                }}
+              >
+                Comprehensive digital solutions tailored to your unique needs, 
+                delivered with precision and passion.
+              </motion.p>
+            </motion.div>
 
-            {/* <motion.h1 variants={fadeInUp} style={{
-              fontSize: 'clamp(2.5rem, 8vw, 4rem)',
-              fontWeight: '300',
-              color: colors.stone[800],
-              marginBottom: '20px',
-              lineHeight: '1.2',
-            }}>
-              Crafting Digital Excellence
-              <span style={{ display: 'block', fontWeight: '500', color: colors.gold[600] }}>
-                Across Every Dimension
-              </span>
-            </motion.h1> */}
-
-            {/* <motion.p variants={fadeInUp} style={{
-              fontSize: '1.2rem',
-              color: colors.stone[600],
-              maxWidth: '800px',
-              margin: '0 auto 40px',
-              lineHeight: '1.7',
-            }}>
-              From stunning websites to powerful mobile apps, we create digital experiences 
-              that drive growth, engage audiences, and build lasting brand value.
-            </motion.p> */}
-
-            {/* Stats Row */}
-            {/* <motion.div
-              variants={fadeInUp}
+            <motion.div
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}
+              variants={staggerContainer}
+              className="services-grid"
               style={{
-                display: 'flex',
-                flexWrap: 'wrap',
-                justifyContent: 'center',
-                gap: '40px',
-                marginTop: '40px',
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+                gap: '25px',
+                width: '100%',
               }}
             >
-              {statsData.slice(0, 3).map((stat, index) => (
+              {services.map((service, index) => (
+                <motion.article
+                  key={index}
+                  variants={scaleIn}
+                  whileHover={{ y: -10 }}
+                  className="service-card"
+                  style={{
+                    background: 'white',
+                    borderRadius: '24px',
+                    padding: '25px',
+                    boxShadow: '0 20px 40px rgba(0, 0, 0, 0.05)',
+                    border: `1px solid ${colors.stone[200]}`,
+                    position: 'relative',
+                    overflow: 'hidden',
+                    width: '100%',
+                    boxSizing: 'border-box',
+                  }}
+                >
+                  {/* Decorative gradient bar */}
+                  <div style={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '4px',
+                    background: service.gradient,
+                  }} />
+
+                  {/* Service Header */}
+                  <div className="service-header" style={{ 
+                    display: 'flex', 
+                    alignItems: 'center', 
+                    gap: '15px', 
+                    marginBottom: '20px',
+                    flexWrap: 'wrap',
+                  }}>
+                    <div className="service-icon" style={{
+                      width: '60px',
+                      height: '60px',
+                      background: service.gradient,
+                      borderRadius: '16px',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      color: 'white',
+                      flexShrink: 0,
+                    }}>
+                      {service.icon}
+                    </div>
+                    <div style={{ flex: 1, minWidth: '150px' }}>
+                      <h3 className="service-title" style={{
+                        fontSize: 'clamp(1.2rem, 4vw, 1.4rem)',
+                        fontWeight: '500',
+                        color: colors.stone[800],
+                        marginBottom: '5px',
+                        lineHeight: '1.3',
+                      }}>
+                        {service.title}
+                      </h3>
+                      <div style={{ 
+                        display: 'flex', 
+                        gap: '10px',
+                        flexWrap: 'wrap',
+                      }}>
+                        {/* {Object.entries(service.stats).map(([key, value]) => (
+                          <span key={key} style={{
+                            fontSize: '0.75rem',
+                            color: colors.gold[600],
+                            fontWeight: '500',
+                            background: colors.gold[100],
+                            padding: '2px 8px',
+                            borderRadius: '12px',
+                          }}>
+                            {value}
+                          </span>
+                        ))} */}
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Description */}
+                  <p style={{
+                    fontSize: '0.95rem',
+                    color: colors.stone[600],
+                    lineHeight: '1.6',
+                    marginBottom: '20px',
+                    wordBreak: 'break-word',
+                  }}>
+                    {service.description}
+                  </p>
+
+                  {/* Features */}
+                  <div className="features-container" style={{
+                    display: 'flex',
+                    flexWrap: 'wrap',
+                    gap: '8px',
+                    marginBottom: '20px',
+                  }}>
+                    {service.features.map((feature, idx) => (
+                      <span
+                        key={idx}
+                        className="feature-tag"
+                        style={{
+                          fontSize: '0.75rem',
+                          padding: '4px 12px',
+                          background: colors.stone[100],
+                          color: colors.stone[600],
+                          borderRadius: '20px',
+                          fontWeight: '500',
+                        }}
+                      >
+                        {feature}
+                      </span>
+                    ))}
+                  </div>
+
+                  {/* Achievements */}
+                  <div style={{
+                    background: colors.beige[50],
+                    borderRadius: '16px',
+                    padding: '15px',
+                    marginBottom: '15px',
+                  }}>
+                    {service.achievements.map((achievement, idx) => (
+                      <div
+                        key={idx}
+                        className="achievement-item"
+                        style={{
+                          display: 'flex',
+                          alignItems: 'center',
+                          gap: '10px',
+                          marginBottom: idx < service.achievements.length - 1 ? '8px' : 0,
+                          flexWrap: 'wrap',
+                        }}
+                      >
+                        <span style={{ 
+                          color: colors.gold[400],
+                          flexShrink: 0,
+                        }}>
+                          {achievement.icon}
+                        </span>
+                        <span style={{ 
+                          fontSize: '0.85rem', 
+                          color: colors.stone[600],
+                          lineHeight: '1.4',
+                        }}>
+                          {achievement.text}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </motion.article>
+              ))}
+            </motion.div>
+          </div>
+        </section>
+
+        {/* Process Section */}
+        <section style={{ 
+          padding: '60px 20px', 
+          background: colors.beige[100],
+          width: '100%',
+          boxSizing: 'border-box',
+        }}>
+          <div style={{ 
+            maxWidth: '1200px', 
+            margin: '0 auto',
+            width: '100%',
+            padding: '0 10px',
+            boxSizing: 'border-box',
+          }}>
+            <motion.div
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}
+              variants={staggerContainer}
+              style={{ textAlign: 'center', marginBottom: '40px' }}
+            >
+              <motion.h2 
+                variants={fadeInUp} 
+                className="section-title"
+                style={{
+                  fontSize: 'clamp(1.8rem, 5vw, 2.8rem)',
+                  fontWeight: '300',
+                  color: colors.stone[800],
+                  marginBottom: '16px',
+                  lineHeight: '1.2',
+                }}
+              >
+                Our <span style={{ fontWeight: '500', color: colors.gold[600] }}>Process</span>
+              </motion.h2>
+              <motion.p 
+                variants={fadeInUp}
+                className="section-description"
+                style={{
+                  fontSize: 'clamp(0.95rem, 3vw, 1.1rem)',
+                  color: colors.stone[600],
+                  maxWidth: '600px',
+                  margin: '0 auto',
+                  padding: '0 10px',
+                }}
+              >
+                A systematic approach that ensures excellence at every stage
+              </motion.p>
+            </motion.div>
+
+            <motion.div
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}
+              variants={staggerContainer}
+              className="process-grid"
+              style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+                gap: '25px',
+                width: '100%',
+              }}
+            >
+              {processSteps.map((step, index) => (
                 <motion.div
                   key={index}
+                  variants={scaleIn}
                   whileHover={{ y: -5 }}
-                  style={{ textAlign: 'center' }}
+                  style={{
+                    background: 'white',
+                    borderRadius: '20px',
+                    padding: '25px',
+                    position: 'relative',
+                    overflow: 'hidden',
+                    boxShadow: '0 10px 30px rgba(0, 0, 0, 0.05)',
+                    width: '100%',
+                    boxSizing: 'border-box',
+                  }}
                 >
-                  <div style={{ fontSize: '2rem', fontWeight: '600', color: colors.gold[600] }}>
-                    {stat.value}
+                  <div style={{
+                    fontSize: 'clamp(2rem, 5vw, 3rem)',
+                    fontWeight: '700',
+                    color: colors.gold[200],
+                    position: 'absolute',
+                    top: '10px',
+                    right: '15px',
+                    opacity: 0.5,
+                  }}>
+                    {step.step}
                   </div>
-                  <div style={{ fontSize: '0.9rem', color: colors.stone[500] }}>{stat.label}</div>
+                  <h3 style={{
+                    fontSize: 'clamp(1.1rem, 4vw, 1.3rem)',
+                    fontWeight: '500',
+                    color: colors.stone[800],
+                    marginBottom: '10px',
+                    position: 'relative',
+                    zIndex: 1,
+                    paddingRight: '40px',
+                  }}>
+                    {step.title}
+                  </h3>
+                  <p style={{
+                    fontSize: '0.9rem',
+                    color: colors.stone[600],
+                    lineHeight: '1.6',
+                    position: 'relative',
+                    zIndex: 1,
+                  }}>
+                    {step.description}
+                  </p>
                 </motion.div>
               ))}
-            </motion.div> */}
-          {/* </motion.div>
-        </div>
-      </section>  */}
+            </motion.div>
+          </div>
+        </section>
 
-      {/* Stats Grid */}
-      {/* <section style={{ padding: '40px 20px' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        {/* CTA Section */}
+        <section className="cta-section" style={{
+          padding: '60px 20px',
+          background: `linear-gradient(135deg, ${colors.stone[800]} 0%, ${colors.stone[900]} 100%)`,
+          textAlign: 'center',
+          width: '100%',
+          boxSizing: 'border-box',
+        }}>
           <motion.div
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
             variants={staggerContainer}
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))',
-              gap: '20px',
+            style={{ 
+              maxWidth: '800px', 
+              margin: '0 auto',
+              padding: '0 15px',
             }}
-          >
-            {statsData.map((stat, index) => (
-              <motion.div
-                key={index}
-                variants={scaleIn}
-                whileHover={{ y: -5, scale: 1.02 }}
-                style={{
-                  background: 'white',
-                  borderRadius: '16px',
-                  padding: '20px',
-                  textAlign: 'center',
-                  boxShadow: '0 10px 30px rgba(0, 0, 0, 0.05)',
-                  border: `1px solid ${colors.stone[200]}`,
-                }}
-              >
-                <div style={{ color: colors.gold[400], marginBottom: '10px' }}>{stat.icon}</div>
-                <div style={{ fontSize: '1.5rem', fontWeight: '600', color: colors.stone[800] }}>
-                  {stat.value}
-                </div>
-                <div style={{ fontSize: '0.8rem', color: colors.stone[500] }}>{stat.label}</div>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </section> */}
-
-      {/* Services Grid */}
-      <section style={{ padding: '100px 20px 60px',
-        background: `linear-gradient(135deg, ${colors.beige[100]} 0%, ${colors.beige[50]} 100%)`,
-        position: 'relative',
-        overflow: 'hidden' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <motion.div
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            variants={staggerContainer}
-            style={{ textAlign: 'center', marginBottom: '50px' }}
           >
             <motion.h2 variants={fadeInUp} style={{
-              fontSize: 'clamp(2rem, 6vw, 2.8rem)',
+              fontSize: 'clamp(1.8rem, 5vw, 3rem)',
               fontWeight: '300',
-              color: colors.stone[800],
-              marginBottom: '16px',
+              color: 'white',
+              marginBottom: '20px',
+              lineHeight: '1.3',
             }}>
-              Our <span style={{ fontWeight: '500', color: colors.gold[600] }}>Services</span>
+              Ready to Transform Your
+              <span style={{ display: 'block', fontWeight: '500', color: colors.gold[400] }}>
+                Digital Presence?
+              </span>
             </motion.h2>
+
             <motion.p variants={fadeInUp} style={{
-              fontSize: '1.1rem',
-              color: colors.stone[600],
-              maxWidth: '700px',
-              margin: '0 auto',
+              fontSize: 'clamp(0.95rem, 3vw, 1.1rem)',
+              color: colors.stone[300],
+              marginBottom: '30px',
+              lineHeight: '1.7',
+              maxWidth: '600px',
+              margin: '0 auto 30px',
             }}>
-              Comprehensive digital solutions tailored to your unique needs, 
-              delivered with precision and passion.
+              Let's discuss how our services can help you achieve your business goals.
             </motion.p>
-          </motion.div>
 
-          <motion.div
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            variants={staggerContainer}
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
-              gap: '30px',
-            }}
-          >
-            {services.map((service, index) => (
-              <motion.article
-                key={index}
-                variants={scaleIn}
-                whileHover={{ y: -10 }}
-                style={{
-                  background: 'white',
-                  borderRadius: '30px',
-                  padding: '30px',
-                  boxShadow: '0 20px 40px rgba(0, 0, 0, 0.05)',
-                  border: `1px solid ${colors.stone[200]}`,
-                  position: 'relative',
-                  overflow: 'hidden',
-                }}
-              >
-                {/* Decorative gradient bar */}
-                <div style={{
-                  position: 'absolute',
-                  top: 0,
-                  left: 0,
-                  width: '100%',
-                  height: '4px',
-                  background: service.gradient,
-                }} />
-
-                {/* Service Header */}
-                <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '20px' }}>
-                  <div style={{
-                    width: '60px',
-                    height: '60px',
-                    background: service.gradient,
-                    borderRadius: '16px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    color: 'white',
-                  }}>
-                    {service.icon}
-                  </div>
-                  <div>
-                    <h3 style={{
-                      fontSize: '1.4rem',
-                      fontWeight: '500',
-                      color: colors.stone[800],
-                      marginBottom: '5px',
-                    }}>
-                      {service.title}
-                    </h3>
-                    <div style={{ display: 'flex', gap: '10px' }}>
-                      {Object.entries(service.stats).map(([key, value]) => (
-                        <span key={key} style={{
-                          fontSize: '0.8rem',
-                          color: colors.gold[600],
-                          fontWeight: '500',
-                        }}>
-                          {value}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-
-                {/* Description */}
-                <p style={{
-                  fontSize: '0.95rem',
-                  color: colors.stone[600],
-                  lineHeight: '1.7',
-                  marginBottom: '20px',
-                }}>
-                  {service.description}
-                </p>
-
-                {/* Features */}
-                <div style={{
-                  display: 'flex',
-                  flexWrap: 'wrap',
-                  gap: '8px',
-                  marginBottom: '20px',
-                }}>
-                  {service.features.map((feature, idx) => (
-                    <span
-                      key={idx}
-                      style={{
-                        fontSize: '0.75rem',
-                        padding: '4px 12px',
-                        background: colors.stone[100],
-                        color: colors.stone[600],
-                        borderRadius: '20px',
-                        fontWeight: '500',
-                      }}
-                    >
-                      {feature}
-                    </span>
-                  ))}
-                </div>
-
-                {/* Achievements */}
-                <div style={{
-                  background: colors.beige[50],
-                  borderRadius: '16px',
-                  padding: '15px',
-                  marginBottom: '20px',
-                }}>
-                  {service.achievements.map((achievement, idx) => (
-                    <div
-                      key={idx}
-                      style={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: '10px',
-                        marginBottom: idx < service.achievements.length - 1 ? '10px' : 0,
-                      }}
-                    >
-                      <span style={{ color: colors.gold[400] }}>{achievement.icon}</span>
-                      <span style={{ fontSize: '0.85rem', color: colors.stone[600] }}>
-                        {achievement.text}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-
-                {/* CTA */}
-                {/* <motion.a
-                  href="#"
+            <motion.div variants={fadeInUp}>
+              <Link to="/contact" style={{ textDecoration: 'none', display: 'inline-block', width: '100%' }}>
+                <motion.button
+                  className="cta-button"
                   style={{
+                    padding: '15px 40px',
+                    background: colors.gold[400],
+                    color: colors.stone[800],
+                    border: 'none',
+                    borderRadius: '50px',
+                    fontSize: 'clamp(1rem, 4vw, 1.1rem)',
+                    fontWeight: '500',
+                    cursor: 'pointer',
                     display: 'inline-flex',
                     alignItems: 'center',
-                    gap: '8px',
-                    color: colors.gold[600],
-                    textDecoration: 'none',
-                    fontSize: '0.95rem',
-                    fontWeight: '500',
+                    justifyContent: 'center',
+                    gap: '10px',
+                    boxShadow: '0 20px 30px rgba(201, 178, 139, 0.3)',
+                    width: 'auto',
+                    minWidth: '250px',
+                    maxWidth: '100%',
+                    margin: '0 auto',
                   }}
-                  whileHover={{ x: 5 }}
+                  whileHover={{ scale: 1.05, background: colors.gold[500] }}
+                  whileTap={{ scale: 0.95 }}
                 >
-                  Learn More <ArrowRight size={16} />
-                </motion.a> */}
-              </motion.article>
-            ))}
+                  Start Your Journey <ArrowRight size={20} />
+                </motion.button>
+              </Link>
+            </motion.div>
           </motion.div>
-        </div>
-      </section>
+        </section>
 
-      {/* Process Section */}
-      <section style={{ padding: '80px 20px', background: colors.beige[100] }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <motion.div
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            variants={staggerContainer}
-            style={{ textAlign: 'center', marginBottom: '50px' }}
-          >
-            <motion.h2 variants={fadeInUp} style={{
-              fontSize: 'clamp(2rem, 6vw, 2.8rem)',
-              fontWeight: '300',
-              color: colors.stone[800],
-              marginBottom: '16px',
-            }}>
-              Our <span style={{ fontWeight: '500', color: colors.gold[600] }}>Process</span>
-            </motion.h2>
-            <motion.p variants={fadeInUp} style={{
-              fontSize: '1.1rem',
-              color: colors.stone[600],
-              maxWidth: '600px',
-              margin: '0 auto',
-            }}>
-              A systematic approach that ensures excellence at every stage
-            </motion.p>
-          </motion.div>
-
-          <motion.div
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            variants={staggerContainer}
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
-              gap: '30px',
-            }}
-          >
-            {processSteps.map((step, index) => (
-              <motion.div
-                key={index}
-                variants={scaleIn}
-                whileHover={{ y: -5 }}
-                style={{
-                  background: 'white',
-                  borderRadius: '20px',
-                  padding: '30px',
-                  position: 'relative',
-                  overflow: 'hidden',
-                  boxShadow: '0 10px 30px rgba(0, 0, 0, 0.05)',
-                }}
-              >
-                <div style={{
-                  fontSize: '3rem',
-                  fontWeight: '700',
-                  color: colors.gold[200],
-                  position: 'absolute',
-                  top: '10px',
-                  right: '15px',
-                  opacity: 0.5,
-                }}>
-                  {step.step}
-                </div>
-                <h3 style={{
-                  fontSize: '1.3rem',
-                  fontWeight: '500',
-                  color: colors.stone[800],
-                  marginBottom: '10px',
-                  position: 'relative',
-                  zIndex: 1,
-                }}>
-                  {step.title}
-                </h3>
-                <p style={{
-                  fontSize: '0.95rem',
-                  color: colors.stone[600],
-                  lineHeight: '1.6',
-                  position: 'relative',
-                  zIndex: 1,
-                }}>
-                  {step.description}
-                </p>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section style={{
-        padding: '80px 20px',
-        background: `linear-gradient(135deg, ${colors.stone[800]} 0%, ${colors.stone[900]} 100%)`,
-        textAlign: 'center',
-      }}>
-        <motion.div
-          initial="initial"
-          whileInView="animate"
-          viewport={{ once: true }}
-          variants={staggerContainer}
-          style={{ maxWidth: '800px', margin: '0 auto' }}
-        >
-          <motion.h2 variants={fadeInUp} style={{
-            fontSize: 'clamp(2rem, 5vw, 3rem)',
-            fontWeight: '300',
-            color: 'white',
-            marginBottom: '20px',
+        {/* Footer note */}
+        <footer className="footer-note" style={{ 
+          padding: '20px', 
+          textAlign: 'center', 
+          background: colors.stone[900],
+          width: '100%',
+          boxSizing: 'border-box',
+        }}>
+          <p style={{ 
+            color: colors.stone[400], 
+            fontSize: 'clamp(0.8rem, 3vw, 0.9rem)',
+            margin: 0,
           }}>
-            Ready to Transform Your
-            <span style={{ display: 'block', fontWeight: '500', color: colors.gold[400] }}>
-              Digital Presence?
-            </span>
-          </motion.h2>
-
-          <motion.p variants={fadeInUp} style={{
-            fontSize: '1.1rem',
-            color: colors.stone[300],
-            marginBottom: '40px',
-            lineHeight: '1.7',
-          }}>
-            Let's discuss how our services can help you achieve your business goals.
-          </motion.p>
-
-          <motion.div variants={fadeInUp}>
-            <Link to="/contact" style={{ textDecoration: 'none' }}>
-           
-            <motion.button
-              style={{
-                padding: '18px 50px',
-                background: colors.gold[400],
-                color: colors.stone[800],
-                border: 'none',
-                borderRadius: '50px',
-                fontSize: '1.1rem',
-                fontWeight: '500',
-                cursor: 'pointer',
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '10px',
-                boxShadow: '0 20px 30px rgba(201, 178, 139, 0.3)',
-              }}
-              whileHover={{ scale: 1.05, background: colors.gold[500] }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Start Your Journey <ArrowRight size={20} />
-            </motion.button> </Link>
-          </motion.div>
-        </motion.div>
-      </section>
-
-      {/* Footer note */}
-      <footer style={{ padding: '20px', textAlign: 'center', background: colors.stone[900] }}>
-        <p style={{ color: colors.stone[400], fontSize: '0.9rem' }}>
-          Partner with us to create digital excellence that drives real business results.
-        </p>
-      </footer>
+            Partner with us to create digital excellence that drives real business results.
+          </p>
+        </footer>
+      </div>
     </main>
   );
 };
