@@ -66,7 +66,7 @@ const Navbar = () => {
           color: colors.beige[50],
         }}
       >
-        Skip to main content
+       
       </a>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -178,22 +178,85 @@ const LandingPage = () => {
                 Experience a partnership built on transparency and fueled by innovation.
               </motion.p>
 
-              <motion.div variants={fadeInUp} style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
-                <Link to="/contact">
-                  <motion.button style={{
-                    padding: '16px 36px', backgroundColor: colors.stone[800], color: 'white',
-                    borderRadius: '12px', fontWeight: '600', border: 'none', cursor: 'pointer'
-                  }} whileHover={{ y: -4, backgroundColor: colors.stone[700] }}>
-                    Start Building
-                  </motion.button>
-                </Link>
-                <motion.button style={{
-                  padding: '16px 36px', backgroundColor: 'transparent', color: colors.stone[800],
-                  borderRadius: '12px', fontWeight: '600', border: `2px solid ${colors.stone[200]}`, cursor: 'pointer'
-                }} whileHover={{ borderColor: colors.gold[400] }}>
-                  View Portfolio
-                </motion.button>
-              </motion.div>
+             {/* Buttons Container - Responsive */}
+<motion.div 
+  variants={fadeInUp} 
+  style={{ 
+    display: 'flex', 
+    gap: '16px', 
+    flexWrap: 'wrap',
+    width: '100%'
+  }}
+  className="hero-buttons-container"
+>
+  <Link to="/contact" className="button-link">
+    <motion.button 
+      className="hero-button primary"
+      style={{
+        width: '100%',
+        padding: '16px 36px', 
+        backgroundColor: colors.stone[800], 
+        color: 'white',
+        borderRadius: '12px', 
+        fontWeight: '600', 
+        border: 'none', 
+        cursor: 'pointer',
+      }} 
+      whileHover={{ y: -4, backgroundColor: colors.stone[700] }}
+      whileTap={{ scale: 0.98 }}
+    >
+      Start Building
+    </motion.button>
+  </Link>
+  
+  <Link to="/services" className="button-link">
+    <motion.button 
+      className="hero-button secondary"
+      style={{
+        width: '100%',
+        padding: '16px 36px', 
+        backgroundColor: 'transparent', 
+        color: colors.stone[800],
+        borderRadius: '12px', 
+        fontWeight: '600', 
+        border: `2px solid ${colors.stone[200]}`, 
+        cursor: 'pointer',
+      }} 
+      whileHover={{ borderColor: colors.gold[400] }}
+      whileTap={{ scale: 0.98 }}
+    >
+      View Services
+    </motion.button>
+  </Link>
+</motion.div>
+
+{/* Add responsive styles */}
+<style>{`
+  .hero-buttons-container {
+    flex-direction: row;
+  }
+  
+  .button-link {
+    flex: 1 1 auto;
+    min-width: 200px;
+  }
+  
+  @media (max-width: 640px) {
+    .hero-buttons-container {
+      flex-direction: column;
+    }
+    
+    .button-link {
+      width: 100%;
+      min-width: 100%;
+    }
+    
+    .hero-button {
+      width: 100%;
+      text-align: center;
+    }
+  }
+`}</style>
             </motion.section>
 
             {/* Right side - The Stunning Animated UI */}
