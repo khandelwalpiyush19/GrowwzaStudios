@@ -1,10 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { 
-  Code, ShoppingCart, Globe, Smartphone, Palette, Users, 
-  Search, Megaphone, Star, Shield, Zap, TrendingUp, Award,
-  Sparkles, ArrowRight, CheckCircle, Rocket, Heart, Eye,
-  Target, BarChart, Camera, MessageCircle, Briefcase, Crown
+import {
+  Code, ShoppingCart, Globe, Smartphone, Palette, Users, Search, Megaphone,
+  Cpu, Share2, Database, Cloud, Zap, Shield, TrendingUp, Rocket, Award,
+  Star, Eye, Heart, MessageCircle, Target, BarChart, Crown, Brain, Clock,
+  Sparkles, ArrowRight, CheckCircle, Camera, Briefcase
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -72,119 +72,175 @@ const PremiumServicesPage = () => {
   };
 
   // Services data (keep your existing services array)
-  const services = [
-    {
-      icon: <Code size={32} />,
-      title: "Web Design & Development",
-      description: "We don't just build websites; we craft digital experiences that grow into powerful brands. Our team follows best practices in security, scalability, and performance to deliver websites that not only look stunning but also load instantly and rank higher.",
-      features: ["Responsive Design", "Latest Technologies", "Brand Focus", "SEO Optimized", "Fast Loading"],
-      stats: { projects: "250+", satisfaction: "98%" },
-      gradient: "linear-gradient(135deg, #c9b28b, #b9a282)",
-      detailedDesc: "Every line of code is written with precision, ensuring your website is secure, scalable, and ready for millions of visitors. We implement modern architectures that grow with your business.We build artfully designed, lightning-fast websites that are optimized for search engines and built to convert visitors into customers.",
-      achievements: [
-        { icon: <Zap size={10} />, text: "Lightning fast load times under 2 seconds" },
-        { icon: <Shield size={16} />, text: "Enterprise-grade security protocols" },
-        { icon: <TrendingUp size={16} />, text: "Scalable to handle 1M+ monthly visitors" }
-      ]
-    },
-    {
-      icon: <ShoppingCart size={32} />,
-      title: "Ecommerce Development",
-      description: "Transform your business with powerful ecommerce solutions that drive sales and create loyal customers. We've helped businesses increase their online revenue by an average of 150% through optimized shopping experiences.",
-      features: ["Multi-device", "Custom Solutions", "Secure Payments", "Inventory Management", "Analytics"],
-      stats: { projects: "180+", revenue: "+150%" },
-      gradient: "linear-gradient(135deg, #b9a282, #a18d71)",
-      detailedDesc: "From small boutiques to enterprise marketplaces, we build ecommerce platforms that convert visitors into customers. Integrated with major payment gateways and built for high conversion rates.",
-      achievements: [
-        { icon: <Rocket size={16} />, text: "30% higher conversion rates on average" },
-        { icon: <Shield size={16} />, text: "PCI compliant secure checkout" },
-        { icon: <Globe size={16} />, text: "Sell globally with multi-currency support" }
-      ]
-    },
-    {
-      icon: <Globe size={32} />,
-      title: "Web Application Development",
-      description: "Powerful, scalable web applications that solve complex business challenges. Our apps handle millions of transactions daily with 99.9% uptime, serving users across the globe with seamless performance.Seamless performance and real-time capabilities that drive business growth.",
-      features: ["Scalable", "User-focused", "Latest Tech Stack", "Real-time", "Cloud Native"],
-      stats: { projects: "120+", uptime: "99.9%" },
-      gradient: "linear-gradient(135deg, #a18d71, #8b7557)",
-      detailedDesc: "Whether it's a SaaS platform, CRM, or custom business tool, we build web applications that are robust, secure, and intuitive. Used by companies worldwide to streamline operations.",
-      achievements: [
-        { icon: <Users size={16} />, text: "Serving 500,000+ active users globally" },
-        { icon: <Zap size={16} />, text: "Real-time updates under 100ms latency" },
-        { icon: <Award size={16} />, text: "99.9% uptime guaranteed" }
-      ]
-    },
-    {
-      icon: <Smartphone size={32} />,
-      title: "Mobile App Development",
-      description: "Native and cross-platform mobile apps that deliver exceptional user experiences. Our apps have been downloaded over 5 million times and maintain 4.8+ star ratings across app stores.We blend cutting-edge technology with user-centric design to create mobile apps that not only look great but also perform flawlessly.",
-      features: ["Android & iOS", "User-centric", "Modern UI/UX", "Offline Support", "Push Notifications"],
-      stats: { downloads: "5M+", rating: "4.8★" },
-      gradient: "linear-gradient(135deg, #dcc5a8, #c9b28b)",
-      detailedDesc: "From startups to Fortune 500 companies, we create mobile experiences that users love. Our apps are optimized for performance, battery life, and seamless integration with device features.",
-      achievements: [
-        { icon: <Star size={16} />, text: "4.8+ average app store rating" },
-        { icon: <Award size={16} />, text: "Featured in App Store 20+ times" }
-      ]
-    },
-    {
-      icon: <Palette size={32} />,
-      title: "Graphics Designing",
-      description: "Eye-catching, modern designs that tell your brand's story. Our portfolio includes work for global brands, with designs that have won international awards and recognition.Clear, compelling visuals that elevate your brand and captivate your audience. We create designs that not only look stunning but also communicate your message effectively.",
-      features: ["Brand Identity", "Marketing Materials", "Creative Direction", "Print Design", "Digital Art"],
-      stats: { projects: "500+", awards: "15+" },
-      gradient: "linear-gradient(135deg, #c9b28b, #dcc5a8)",
-      detailedDesc: "We create visuals that stop the scroll and capture attention. From minimalist logos to elaborate brand identities, every design is crafted to evoke emotion and drive engagement.",
-      achievements: [
-        { icon: <Award size={16} />, text: "15+ international design awards" },
-        { icon: <Eye size={16} />, text: "Featured in top design publications" },
-        { icon: <Heart size={16} />, text: "98% client satisfaction rate" }
-      ]
-    },
-    {
-      icon: <Users size={32} />,
-      title: "Social Media Management",
-      description: "Strategic social media management that builds communities and drives engagement. We've grown audiences to millions of followers and generated over 100M+ impressions.Brands don't just need followers; they need engaged communities.",
-      features: ["Content Strategy", "Community Management", "Analytics", "Campaign Management", "Influencer Outreach"],
-      stats: { followers: "2M+", engagement: "+200%" },
-      gradient: "linear-gradient(135deg, #b9a282, #c9b28b)",
-      detailedDesc: "We don't just post; we create conversations. Our data-driven approach ensures every post reaches the right audience at the right time, building authentic connections with your community.",
-      achievements: [
-        { icon: <Users size={16} />, text: "Grown communities to 2M+ followers" },
-        { icon: <MessageCircle size={16} />, text: "100M+ impressions generated" },
-        { icon: <TrendingUp size={16} />, text: "200% average engagement increase" }
-      ]
-    },
-    {
-      icon: <Search size={32} />,
-      title: "SEO & Digital Marketing",
-      description: "Data-driven SEO strategies that put you on page one. We've helped clients achieve #1 rankings for competitive keywords, driving 300% more organic traffic. Our holistic SEO and digital marketing strategies are designed to drive sustainable growth, increase visibility, and deliver real business results.",
-      features: ["Keyword Strategy", "On-page SEO", "Analytics", "Link Building", "Local SEO"],
-      stats: { keywords: "500+", traffic: "+300%" },
-      gradient: "linear-gradient(135deg, #a18d71, #b9a282)",
-      detailedDesc: "Our holistic approach combines technical SEO, content strategy, and authority building to create sustainable growth. We focus on real results that impact your bottom line.",
-      achievements: [
-        { icon: <Target size={10} />, text: "#1 ranking for 500+ competitive keywords" },
-        { icon: <BarChart size={16} />, text: "300% average organic traffic increase" },
-        { icon: <Zap size={16} />, text: "Pages load 2x faster after optimization" }
-      ]
-    },
-    {
-      icon: <Megaphone size={32} />,
-      title: "Branding & Logos",
-      description: "Complete brand identities that resonate and endure. We've created brands for 20+ companies that have become household names, with identities that stand the test of time.We nurture brands from ground to their full potential.",
-      features: ["Logo Design", "Brand Guidelines", "Visual Identity", "Brand Strategy", "Voice & Tone"],
-      stats: { brands: "20+", recognition: "90%" },
-      gradient: "linear-gradient(135deg, #8b7557, #a18d71)",
-      detailedDesc: "Your brand is more than a logo—it's how the world perceives you. We create cohesive identities that communicate your values, connect with your audience, and differentiate you from competitors.",
-      achievements: [
-        { icon: <Crown size={16} />, text: "20+ successful brand launches" },
-        { icon: <Award size={16} />, text: "90% brand recognition in target markets" },
-        { icon: <Heart size={16} />, text: "Identities that last for decades" }
-      ]
-    }
-  ];
+ const services = [
+  { 
+    icon: <Code size={32} />, 
+    title: "Web Design & Development", 
+    description: "We don't just build websites; we craft digital experiences that grow into powerful brands. Our team follows best practices in security, scalability, and performance to deliver websites that not only look stunning but also load instantly and rank higher.", 
+    features: ["Responsive Design", "Latest Technologies", "Brand Focus", "SEO Optimized", "Fast Loading"], 
+    stats: { projects: "250+", satisfaction: "98%" }, 
+    gradient: "linear-gradient(135deg, #c9b28b, #b9a282)", 
+    detailedDesc: "Every line of code is written with precision, ensuring your website is secure, scalable, and ready for millions of visitors. We implement modern architectures that grow with your business. We build artfully designed, lightning-fast websites that are optimized for search engines and built to convert visitors into customers.", 
+    achievements: [ 
+      { icon: <Zap size={16} />, text: "Lightning fast load times under 2 seconds" }, 
+      { icon: <Shield size={16} />, text: "Enterprise-grade security protocols" }, 
+      { icon: <TrendingUp size={16} />, text: "Scalable to handle 1M+ monthly visitors" } 
+    ] 
+  },
+  { 
+    icon: <ShoppingCart size={32} />, 
+    title: "Ecommerce Development", 
+    description: "Transform your business with powerful ecommerce solutions that drive sales and create loyal customers. We've helped businesses increase their online revenue by an average of 150% through optimized shopping experiences.", 
+    features: ["Multi-device", "Custom Solutions", "Secure Payments", "Inventory Management", "Analytics"], 
+    stats: { projects: "180+", revenue: "+150%" }, 
+    gradient: "linear-gradient(135deg, #b9a282, #a18d71)", 
+    detailedDesc: "From small boutiques to enterprise marketplaces, we build ecommerce platforms that convert visitors into customers. Integrated with major payment gateways and built for high conversion rates.", 
+    achievements: [ 
+      { icon: <Rocket size={16} />, text: "30% higher conversion rates on average" }, 
+      { icon: <Shield size={16} />, text: "PCI compliant secure checkout" }, 
+      { icon: <Globe size={16} />, text: "Sell globally with multi-currency support" } 
+    ] 
+  },
+  { 
+    icon: <Globe size={32} />, 
+    title: "Web Application Development", 
+    description: "Powerful, scalable web applications that solve complex business challenges. Our apps handle millions of transactions daily with 99.9% uptime, serving users across the globe with seamless performance. Seamless performance and real-time capabilities that drive business growth.", 
+    features: ["Scalable", "User-focused", "Latest Tech Stack", "Real-time", "Cloud Native"], 
+    stats: { projects: "120+", uptime: "99.9%" }, 
+    gradient: "linear-gradient(135deg, #a18d71, #8b7557)", 
+    detailedDesc: "Whether it's a SaaS platform, CRM, or custom business tool, we build web applications that are robust, secure, and intuitive. Used by companies worldwide to streamline operations.", 
+    achievements: [ 
+      { icon: <Users size={16} />, text: "Serving 500,000+ active users globally" }, 
+      { icon: <Zap size={16} />, text: "Real-time updates under 100ms latency" }, 
+      { icon: <Award size={16} />, text: "99.9% uptime guaranteed" } 
+    ] 
+  },
+  { 
+    icon: <Smartphone size={32} />, 
+    title: "Mobile App Development", 
+    description: "Native and cross-platform mobile apps that deliver exceptional user experiences. Our apps have been downloaded over 5 million times and maintain 4.8+ star ratings across app stores. We blend cutting-edge technology with user-centric design to create mobile apps that not only look great but also perform flawlessly.", 
+    features: ["Android & iOS", "User-centric", "Modern UI/UX", "Offline Support", "Push Notifications"], 
+    stats: { downloads: "5M+", rating: "4.8★" }, 
+    gradient: "linear-gradient(135deg, #dcc5a8, #c9b28b)", 
+    detailedDesc: "From startups to Fortune 500 companies, we create mobile experiences that users love. Our apps are optimized for performance, battery life, and seamless integration with device features.", 
+    achievements: [ 
+      { icon: <Star size={16} />, text: "4.8+ average app store rating" }, 
+      { icon: <Award size={16} />, text: "Featured in App Store 20+ times" } 
+    ] 
+  },
+  { 
+    icon: <Palette size={32} />, 
+    title: "Graphics Designing", 
+    description: "Eye-catching, modern designs that tell your brand's story. Our portfolio includes work for global brands, with designs that have won international awards and recognition. Clear, compelling visuals that elevate your brand and captivate your audience. We create designs that not only look stunning but also communicate your message effectively.", 
+    features: ["Brand Identity", "Marketing Materials", "Creative Direction", "Print Design", "Digital Art"], 
+    stats: { projects: "500+", awards: "15+" }, 
+    gradient: "linear-gradient(135deg, #c9b28b, #dcc5a8)", 
+    detailedDesc: "We create visuals that stop the scroll and capture attention. From minimalist logos to elaborate brand identities, every design is crafted to evoke emotion and drive engagement.", 
+    achievements: [ 
+      { icon: <Award size={16} />, text: "15+ international design awards" }, 
+      { icon: <Eye size={16} />, text: "Featured in top design publications" }, 
+      { icon: <Heart size={16} />, text: "98% client satisfaction rate" } 
+    ] 
+  },
+  { 
+    icon: <Users size={32} />, 
+    title: "Social Media Management", 
+    description: "Strategic social media management that builds communities and drives engagement. We've grown audiences to millions of followers and generated over 100M+ impressions. Brands don't just need followers; they need engaged communities.", 
+    features: ["Content Strategy", "Community Management", "Analytics", "Campaign Management", "Influencer Outreach"], 
+    stats: { followers: "2M+", engagement: "+200%" }, 
+    gradient: "linear-gradient(135deg, #b9a282, #c9b28b)", 
+    detailedDesc: "We don't just post; we create conversations. Our data-driven approach ensures every post reaches the right audience at the right time, building authentic connections with your community.", 
+    achievements: [ 
+      { icon: <Users size={16} />, text: "Grown communities to 2M+ followers" }, 
+      { icon: <MessageCircle size={16} />, text: "100M+ impressions generated" }, 
+      { icon: <TrendingUp size={16} />, text: "200% average engagement increase" } 
+    ] 
+  },
+  { 
+    icon: <Search size={32} />, 
+    title: "SEO & Digital Marketing", 
+    description: "Data-driven SEO strategies that put you on page one. We've helped clients achieve #1 rankings for competitive keywords, driving 300% more organic traffic. Our holistic SEO and digital marketing strategies are designed to drive sustainable growth, increase visibility, and deliver real business results.", 
+    features: ["Keyword Strategy", "On-page SEO", "Analytics", "Link Building", "Local SEO"], 
+    stats: { keywords: "500+", traffic: "+300%" }, 
+    gradient: "linear-gradient(135deg, #a18d71, #b9a282)", 
+    detailedDesc: "Our holistic approach combines technical SEO, content strategy, and authority building to create sustainable growth. We focus on real results that impact your bottom line.", 
+    achievements: [ 
+      { icon: <Target size={16} />, text: "#1 ranking for 500+ competitive keywords" }, 
+      { icon: <BarChart size={16} />, text: "300% average organic traffic increase" }, 
+      { icon: <Zap size={16} />, text: "Pages load 2x faster after optimization" } 
+    ] 
+  },
+  { 
+    icon: <Megaphone size={32} />, 
+    title: "Branding & Logos", 
+    description: "Complete brand identities that resonate and endure. We've created brands for 20+ companies that have become household names, with identities that stand the test of time. We nurture brands from ground to their full potential.", 
+    features: ["Logo Design", "Brand Guidelines", "Visual Identity", "Brand Strategy", "Voice & Tone"], 
+    stats: { brands: "20+", recognition: "90%" }, 
+    gradient: "linear-gradient(135deg, #8b7557, #a18d71)", 
+    detailedDesc: "Your brand is more than a logo—it's how the world perceives you. We create cohesive identities that communicate your values, connect with your audience, and differentiate you from competitors.", 
+    achievements: [ 
+      { icon: <Crown size={16} />, text: "20+ successful brand launches" }, 
+      { icon: <Award size={16} />, text: "90% brand recognition in target markets" }, 
+      { icon: <Heart size={16} />, text: "Identities that last for decades" } 
+    ] 
+  },
+  { 
+    icon: <Cpu size={32} />, 
+    title: "AI Automation & Agents", 
+    description: "Harness the power of AI to automate workflows and deploy intelligent agents that enhance efficiency and decision-making. We've helped businesses reduce operational costs by 40% through strategic AI implementation.", 
+    features: ["Workflow Automation", "Intelligent Agents", "Data-driven Insights", "Process Optimization", "Predictive Analytics"], 
+    stats: { efficiency: "+40%", projects: "50+" }, 
+    gradient: "linear-gradient(135deg, #6b5a4a, #8b7557)", 
+    detailedDesc: "From customer service chatbots to complex decision-making systems, we build AI solutions that learn and adapt. Our AI agents handle millions of interactions while continuously improving through machine learning.", 
+    achievements: [ 
+      { icon: <Zap size={16} />, text: "40% reduction in operational costs" }, 
+      { icon: <Brain size={16} />, text: "AI agents handling 1M+ interactions monthly" }, 
+      { icon: <TrendingUp size={16} />, text: "99.5% accuracy in predictive models" } 
+    ] 
+  },
+  { 
+    icon: <Share2 size={32} />, 
+    title: "Social Media Integration", 
+    description: "Seamlessly integrate social media platforms with your business systems to maximize reach and engagement. Our integration solutions have increased cross-platform engagement by 180% for our clients.", 
+    features: ["Cross-platform Integration", "Automated Posting", "Analytics Sync", "Social Listening", "API Integration"], 
+    stats: { engagement: "+180%", platforms: "10+" }, 
+    gradient: "linear-gradient(135deg, #a18d71, #b9a282)", 
+    detailedDesc: "Connect all your social channels into a unified ecosystem. Our integrations enable real-time syncing, automated workflows, and comprehensive analytics across every platform your business uses.", 
+    achievements: [ 
+      { icon: <Globe size={16} />, text: "Integrated with 10+ major platforms" }, 
+      { icon: <BarChart size={16} />, text: "180% increase in cross-platform engagement" }, 
+      { icon: <Clock size={16} />, text: "20+ hours saved weekly on manual posting" } 
+    ] 
+  },
+  { 
+    icon: <Database size={32} />, 
+    title: "ERP & CRM Solutions", 
+    description: "Implement ERP and CRM systems tailored to your business needs, streamlining operations and enhancing customer relationships. Our solutions have helped clients achieve 99.9% data accuracy and 50% faster reporting.", 
+    features: ["Process Optimization", "Customer Management", "Scalable Solutions", "Data Integration", "Real-time Reporting"], 
+    stats: { accuracy: "99.9%", growth: "+200%" }, 
+    gradient: "linear-gradient(135deg, #8b7557, #6b5a4a)", 
+    detailedDesc: "End-to-end business management solutions that integrate every aspect of your operations. From inventory to customer relationships, our ERP/CRM systems provide complete visibility and control.", 
+    achievements: [ 
+      { icon: <Shield size={16} />, text: "99.9% data accuracy achieved" }, 
+      { icon: <Zap size={16} />, text: "50% faster reporting and analytics" }, 
+      { icon: <Users size={16} />, text: "200% improvement in customer response time" } 
+    ] 
+  },
+  { 
+    icon: <Cloud size={32} />, 
+    title: "Cloud Solutions & DevOps", 
+    description: "Leverage cloud infrastructure and DevOps practices to build scalable, secure, and efficient systems tailored to your business needs. We've helped clients achieve 99.99% uptime and 60% faster deployment cycles.", 
+    features: ["Cloud Infrastructure", "CI/CD Automation", "Scalability & Security", "Infrastructure as Code", "24/7 Monitoring"], 
+    stats: { uptime: "99.99%", deployments: "60%" }, 
+    gradient: "linear-gradient(135deg, #b9a282, #dcc5a8)", 
+    detailedDesc: "Modern infrastructure solutions that scale effortlessly with your business. From AWS to Azure, we design, deploy, and manage cloud architectures that are resilient, cost-effective, and future-proof.", 
+    achievements: [ 
+      { icon: <Cloud size={16} />, text: "99.99% infrastructure uptime guaranteed" }, 
+      { icon: <Rocket size={16} />, text: "60% faster deployment cycles" }, 
+      { icon: <Shield size={16} />, text: "Enterprise-grade security & compliance" } 
+    ] 
+  }
+];
 
   // Stats data
   const statsData = [
