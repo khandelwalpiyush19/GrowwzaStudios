@@ -297,12 +297,12 @@ const ServicesLanding = () => {
   // Recent work data
   const recentWork = [
   {
-    title: "Zigi's Wine Bar",
+    title: "Himanish Bhattacharya - Entrepreneur, Founder and Speaker",
     category: "Web Development",
-    description: "A rooted bar in Australia which is established in 1980's",
-    image: "/showCase1.png", // Using placeholder for now
+    description: "A portfolio for an Indian entrepreneur, creator and speaker.",
+    image: "/showCase5.png", // Using placeholder for now
     gradient: "linear-gradient(135deg, #c9b28b, #b9a282)",
-    link: "https://zigis.com.au/"
+    link: "https://www.himanishbhattacharya.com/"
   },
   {
     title: "Arts by Purvi Shah",
